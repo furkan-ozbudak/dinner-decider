@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:orientation="vertical"
+    android:outlineAmbientShadowColor="@color/colorGrayishBlue"
+    android:outlineSpotShadowColor="@color/colorGrayishBlue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dinnerImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="Dinner Picture"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <TextView
+        android:id="@+id/dinnerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Click Decide to find out!"
+        android:textSize="25sp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/dinnerTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="add new food.."
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="@color/colorGrayishBlue"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        android:text="ADD FOOD"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        android:onClick="addClick"/>
+
+    <Button
+        android:id="@+id/decideButton"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:text="DECIDE!"
+        android:textSize="28dp"
+        android:background="@color/colorGrayishBlue"
+        android:textColor="@color/colorWhite"
+        android:onClick="decideClick"/>
+
+</LinearLayout>
